@@ -25,7 +25,7 @@ public class Stack {
         int num = -1;
         if (!stack.isEmpty()) {
             num = stack.getLast();
-            stack.remove(stack.getLast());
+            stack.removeLast();
         }
 
         return num;

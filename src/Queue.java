@@ -41,7 +41,7 @@ public class Queue {
         }
 
         for (int i = 0; i<counter; i++)  {
-            hold = queue[i++];
+            hold = queue[i + 1];
             queue[i] = hold;
         }
 
