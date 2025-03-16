@@ -4,6 +4,7 @@ public class Queue {
     //ArrayList<> queue = new ArrayList<>();
     Integer[] queue = new Integer[10];
     int counter = 0;
+    int first;
 
     public Queue() {
     }

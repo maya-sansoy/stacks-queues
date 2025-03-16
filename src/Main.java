@@ -1,18 +1,18 @@
 public class Main {
     public static void main(String[] args) {
-        Stack stack = new Stack();
-
-
-        stack.push(1);
-        stack.push(2);
-        stack.push(3);
-        stack.push(2);
-        stack.push(5);
-
-
-        System.out.println(stack.pop()); // Output: 5
-        System.out.println(stack.pop()); // Output: 2
-        System.out.println(stack.pop()); // Output: 3
+//        Stack stack = new Stack();
+//
+//
+//        stack.push(1);
+//        stack.push(2);
+//        stack.push(3);
+//        stack.push(2);
+//        stack.push(5);
+//
+//
+//        System.out.println(stack.pop()); // Output: 5
+//        System.out.println(stack.pop()); // Output: 2
+//        System.out.println(stack.pop()); // Output: 3
 //
 //        System.out.println("");
 //
@@ -35,6 +35,7 @@ public class Main {
 //        stack.push(3);
 
 
+       /*
         Queue queue = new Queue();
 
         // Enqueue elements into the queue
@@ -64,6 +65,44 @@ public class Main {
 
         queue.print();
 
+        */
+
+//        LinkedList list = new LinkedList();
+//        Node firstnode = new Node(8);
+//        Node secondnode = new Node(9);
+//        Node thirdnode = new Node(5);
+//
+//        list.addNode(firstnode);
+//        list.addNode(secondnode);
+//        list.addNode(thirdnode);
+//
+//        list.printList();
+//
+//        list.removeNode(thirdnode);
+//        list.printList();
+
+
+        BinaryTree tree = new BinaryTree();
+
+        BinaryNode bnone = new BinaryNode(5);
+        BinaryNode bntwo = new BinaryNode(3);
+        BinaryNode bnthree = new BinaryNode(2);
+        BinaryNode bnfour = new BinaryNode(4);
+        BinaryNode bnfive = new BinaryNode(7);
+        BinaryNode bnsix = new BinaryNode(1);
+
+        tree.insert(bnone);
+        tree.insert(bntwo);
+        tree.insert(bnthree);
+        tree.insert(bnfour);
+        tree.insert(bnfive);
+        tree.insert(bnsix);
+
+        System.out.println(tree.root.value);
+        System.out.println(tree.root.leftchild.rightchild.value);// should print out 4
+        tree.search(5);
+        tree.search(4);
+        tree.search(8);
 
     }
 }
